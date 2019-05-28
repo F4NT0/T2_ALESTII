@@ -5,13 +5,14 @@ class Reader():
         self.arquivo = arquivo
     
 
-    def feudoInicial(self):
+    def feudoInicial(self,lista):
         """Serve para criar o primeiro feudo que iremos usar"""
         file = open(self.arquivo)
         header = file.readline()
         separador = header.split(' ')
         exercito_inicial = separador[0]
-        # TODO Criar o Objeto Castelo
+        novoCastelo = Castelo(0,exercito_inicial)
+        lista.append(novoCastelo)
 
 
     def nroCastelos(self):
@@ -23,13 +24,15 @@ class Reader():
         return nro_castelos
 
     def estradasDoReino(self):
+        """Serve para pegar o numero de estradas do evento"""
         file = open(self.arquivo)
         header = file.readline()
         separador = header.split(' ')
         nro_estradas = separador[2]
         return nro_estradas
 
-    def definindoCastelos(self,nro_castelos):
+    def definindoCastelos(self,nro_castelos,lista):
+        """Serve para colocar as informações em um objeto Castelo"""
         file = open(self.arquivo)
         header = file.readline()
         lines = file.readlines()
@@ -40,7 +43,9 @@ class Reader():
             separador = line.split(' ')
             nro_castelo = separador[0]
             nro_soldados = separador[1]
-            # TODO Enviar para o Objeto Castelo
+            novoCastelo = Castelo(nro_castelo,nro_soldados)
+            lista.append(novoCastelo)
+
 
     def definindoRotas(self,nro_castelos):
         file = open(self.arquivo)
