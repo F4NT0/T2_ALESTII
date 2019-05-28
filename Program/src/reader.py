@@ -47,7 +47,8 @@ class Reader():
             lista.append(novoCastelo)
 
 
-    def definindoRotas(self,nro_castelos):
+    def definindoRotas(self,nro_castelos,lista_castelos):
+        """Serve para poder definir os Castelos Conectados entre si"""
         file = open(self.arquivo)
         header = file.readline()
         lines = file.readlines()
@@ -58,7 +59,17 @@ class Reader():
             separador = line.split(' ')
             castelo_origem = separador[0]
             castelo_destino = separador[1]
-            # TODO Criar o Método para poder definir as Rotas
+            
+            #Transformacao em Integer
+            castelo_origem = int(castelo_origem)
+            castelo_destino = int(castelo_destino)
+
+            
+            
+            lista_castelos[castelo_origem].castelosConectados(lista_castelos[castelo_destino]) # Envia para a lista de rotas do Castelo especifico
+    
+
+                
 
 
 

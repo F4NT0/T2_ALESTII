@@ -10,7 +10,9 @@ pergaminho.definindoCastelos(nro_castelos,castelos) # Dividido as informações 
 # for i in range(0,len(castelos)):
 #     print('Castelo ',castelos[i].getNroCastelo())
 #     print('Soldados: ',castelos[i].getSoldados())
+pergaminho.definindoRotas(nro_castelos,castelos)
 
+pergaminho.getRotas()
 
 
 
