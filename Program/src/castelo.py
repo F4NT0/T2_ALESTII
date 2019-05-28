@@ -3,6 +3,7 @@ class Castelo():
         """Classe para definir como o Castelo Funciona"""
         self.nro_castelo = nro_castelo
         self.nro_soldados = nro_soldados
+        rotas = []
 
     # Métodos básicos para pegar informações
     def getSoldados(self):
@@ -13,7 +14,8 @@ class Castelo():
         self.nro_soldados = nro_soldados
     def setCastelos(self,nro_castelo):
         self.nro_castelo = nro_castelo
-    
+
+        
    
     
     
