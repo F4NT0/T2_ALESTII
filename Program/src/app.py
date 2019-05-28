@@ -16,9 +16,20 @@ feudos = [] # criando o vetor dos castelos
 
 
 lines = file.readlines()
-for line in lines:
-    separate = line.split(' ')
-    value1 = separate[0]
-    value2 = separate[1]
-    novoCastelo = Castelo(value1,value2)
-    print(novoCastelo.getNroCastelo())
+
+# para poder organizar os castelos
+for line in lines[:8]:
+        separate = line.split(' ')
+        value1 = separate[0]
+        value2 = separate[1]
+        novoCastelo = Castelo(value1,value2)
+        print(novoCastelo.getNroCastelo())
+
+# para poder trabalhar com as Rotas
+for line in lines[9:]:
+        separate = line.split(' ')
+        value1 = separate[0]
+        value2 = separate[1]
+        print('Feudo Origem', value1)
+        print('Feudo Destino',value2)
+        
