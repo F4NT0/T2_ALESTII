@@ -8,7 +8,7 @@ class Castelo():
     
 
     # Métodos básicos para pegar informações
-    def getSoldados(self):
+    def getNroSoldados(self):
         """Pegar o Número de Soldados"""
         soldados = int(self.nro_soldados)
         return soldados
@@ -20,7 +20,7 @@ class Castelo():
 
     def getProximo(self):
         """Pegar o Próximo Nodo que iremos ir"""
-        return proximo
+        return self.proximo
 
     def setSoldados(self,nro_soldados):
         """Definir o Número de Soldados"""

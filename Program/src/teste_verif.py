@@ -1,10 +1,24 @@
-# Teste de Verificação de Valores de uma Lista em forma Recurão
+# Teste de Verificação do Castelo
+from castelo import Castelo
 
-lista = [5,6,8,1,2,3]
-print(min(lista))
+castelo_inicial = Castelo(0,200)
+proximo_castelo = Castelo(1,100)
 
-# def verificacao(lista,valor_1,valor_2)
-#     if(valor_1 > valor_2):
+castelo_inicial.castelosConectados(proximo_castelo)
 
+# Teste do Castelo Inicial
 
-# def verificacao(lista)
+print('Numero do Castelo Inicial: ', castelo_inicial.getNroCastelo())
+print('Numero de Soldados do Castelo: ', castelo_inicial.getNroSoldados())
+
+#Teste para ver se o castelo esta na lista
+
+lista = castelo_inicial.getRota(castelo_inicial.getNroCastelo)
+for valor in lista:
+    print('Castelo na Lista: ',valor.getNroCastelo())
+
+# Definindo o segundo castelo como proximo
+
+castelo_inicial.setProximo(proximo_castelo)
+
+print('Proximo Castelo da Lista: ', castelo_inicial.getProximo().getNroCastelo())
