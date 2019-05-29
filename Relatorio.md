@@ -52,4 +52,19 @@ Quando tivermos todos os Nodos organizados, com as referências bem definidas na
 
 1. Queremos verificar qual dos Castelos que queremos ir tem o menor número de Soldados, sendo esse número menor que a metade de soldados que queremos utilizar.
 2. Todo feudo que estamos devemos deixar 50 soldados para que protejam o nosso Castelo inicial e com o resto dos Soldados iremos atacar o Pŕoximo Castelo
-3. 
+3. Tentaremos conquistar o Feudo que estamos tentando ir, onde ele ira verificar o numero total de soldados que temos e quantos soldados estão no Castelo que queremos conquistar
+4. Após conquistado o Castelo, iremos somar nossos soldados com o numero de Soldados que sobreviveram no Feudo e tentaremos atacar ao Proximo Feudo
+
+A resposta que desejamos do Programa e o numero de Feudos que conquistamos antes de nao ter mais soldados para poder conquistar, tendo assim tambem quais feudos foram conquistados no caminho
+
+No fim de preferência apos concluir o programa ele armazene as informacoes e faça um arquivo para usarmos o Digraph para criar um Grafo visivel de Conquista
+
+
+## Primeira Solução
+
+Primeiramente iremos criar o Nodo dos Castelos
+
+Leremos o arquivo texto que possui a primeira linha e iremos armazenar as informações em variaveis que trabalharemos nelas como abaixo:
+* A primeira informação é o numero de soldados do Castelo 0, que sera armazenado em uma variavel e adicionado ao Objeto Castelo
+* A segunda informação é o número de Castelos totais que teremos em nosso sistema, que será usado para determinar o tamanho da lista de Feudos que iremos trabalhar
+* a terceira informação é o Numero de Rotas que iremos possuir para podermos andar entre eles, onde sera usad 

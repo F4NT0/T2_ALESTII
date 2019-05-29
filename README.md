@@ -12,7 +12,7 @@ To-Do|Status
 |---|---|
 Criado Repositorio|:white_check_mark:
 Colocado o PDF no Repositorio|:white_check_mark:
-Verificar a Materia anterior|:x:
-Revisar grafos|:x:
-Entender o que se deve fazer no trabalho|:x:
-Linguagem usada para fazer o trabalho|:x:
+Verificar a Materia anterior|:white_check_mark:
+Revisar grafos|:white_check_mark:
+Entender o que se deve fazer no trabalho|:white_check_mark:
+Linguagem usada para fazer o trabalho|:white_check_mark:
