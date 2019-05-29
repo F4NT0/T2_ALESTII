@@ -21,7 +21,9 @@ class Castelo():
 
     def getRotas(self):
         for rota in self.rotas:
-            print(rota)
+            print('Castelo: ',rota.getNroCastelo())
+            print('Soldados: ',rota.getSoldados())
+            
 
 
         

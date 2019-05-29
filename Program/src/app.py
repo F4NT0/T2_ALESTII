@@ -12,7 +12,8 @@ pergaminho.definindoCastelos(nro_castelos,castelos) # Dividido as informações 
 #     print('Soldados: ',castelos[i].getSoldados())
 pergaminho.definindoRotas(nro_castelos,castelos)
 
-pergaminho.getRotas()
+print(castelos[0].getRotas()) # Como pegar informações das rotas do castelo
+
 
 
 
