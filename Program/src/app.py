@@ -18,7 +18,7 @@ pergaminho.definindoRotas(nro_castelos,castelos)
 caminho = Estradas(castelo[0])
 caminhos_possiveis = caminho.acharMinimo(castelo[0])
 for caminho in caminhos_possiveis:
-    print(caminho)
+    print(caminho)  
 
 
 
