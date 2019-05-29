@@ -4,12 +4,18 @@ class Castelo():
         self.nro_castelo = nro_castelo
         self.nro_soldados = nro_soldados
         self.rotas = []
+    
+    #SOBRECARGA
+    def __init__(self):
+        pass
 
     # Métodos básicos para pegar informações
     def getSoldados(self):
-        return self.nro_soldados
+        soldados = int(self.nro_soldados)
+        return soldados
     def getNroCastelo(self):
-        return self.nro_castelo
+        castelo = int(self.nro_castelo)
+        return castelo
     def setSoldados(self,nro_soldados):
         self.nro_soldados = nro_soldados
     def setCastelos(self,nro_castelo):
@@ -19,10 +25,10 @@ class Castelo():
     def castelosConectados(self,castelo_destino):
         self.rotas.append(castelo_destino)
 
-    def getRotas(self):
-        for rota in self.rotas:
-            print('Castelo: ',rota.getNroCastelo())
-            print('Soldados: ',rota.getSoldados())
+    def getRota(self,nro_castelo):
+        return self.rotas
+
+       
             
 
 

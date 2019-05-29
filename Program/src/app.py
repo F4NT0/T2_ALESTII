@@ -1,4 +1,5 @@
 from reader import Reader
+from estradas import Estradas
 
 pergaminho = Reader('pergaminho.txt') # Iniciando a Classe Reader
 castelos = [] # Iniciando a lista com os Castelos
@@ -12,7 +13,18 @@ pergaminho.definindoCastelos(nro_castelos,castelos) # Dividido as informações 
 #     print('Soldados: ',castelos[i].getSoldados())
 pergaminho.definindoRotas(nro_castelos,castelos)
 
-print(castelos[0].getRotas()) # Como pegar informações das rotas do castelo
+# Castelos agora é a lista principal de Castelos
+
+caminho = Estradas(castelo[0])
+caminhos_possiveis = caminho.acharMinimo(castelo[0])
+for caminho in caminhos_possiveis:
+    print(caminho)
+
+
+
+
+
+# print(castelos[0].getRotas()) # Como pegar informações das rotas do castelo
 
 
 
