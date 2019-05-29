@@ -67,4 +67,4 @@ Primeiramente iremos criar o Nodo dos Castelos
 Leremos o arquivo texto que possui a primeira linha e iremos armazenar as informações em variaveis que trabalharemos nelas como abaixo:
 * A primeira informação é o numero de soldados do Castelo 0, que sera armazenado em uma variavel e adicionado ao Objeto Castelo
 * A segunda informação é o número de Castelos totais que teremos em nosso sistema, que será usado para determinar o tamanho da lista de Feudos que iremos trabalhar
-* a terceira informação é o Numero de Rotas que iremos possuir para podermos andar entre eles, onde sera usad 
+* a terceira informação é o Numero de Rotas que iremos possuir para podermos andar entre eles, onde sera usado 
